@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.gabriel.mvc.shapeimpl"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.gabriel.mvc.shapesfx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.gabriel.pss.pssfx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.gabriel.pss.psswsimpl"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/jmxtools-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAZER-MERCURY/Documents/school(3Y3T)/Application Development and Emerging Technologies/assignment/spcorejars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

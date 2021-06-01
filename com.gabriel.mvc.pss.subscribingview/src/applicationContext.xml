@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+  
+  
+  
+  			<!-- LOCATIONS -->
+  		
+  			
+     <!-- plane -->
+     <bean id="planeLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "0"/>  
+		<constructor-arg value = "0"/>  	  
+	</bean>
+	
+	
+	<!-- nose -->
+	<bean id="noseLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "290"/>  
+		<constructor-arg value = "280"/>	  
+	</bean>
+	          
+	          
+    <!-- body -->
+    <bean id="bodyLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "100"/>  
+		<constructor-arg value = "260"/>	  
+	</bean>
+	
+	<!-- tail -->
+    <bean id="tailLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "75"/>  
+		<constructor-arg value = "263"/>	  
+	</bean>
+	
+	<!-- cab -->
+    <bean id="cabLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "160"/>  
+		<constructor-arg value = "260"/>	  
+	</bean>
+	
+	<!-- man -->
+    <bean id="manLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "170"/>  
+		<constructor-arg value = "240"/>	  
+	</bean>
+	
+	<!-- leftProp -->
+    <bean id="leftPropLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "252"/>  
+		<constructor-arg value = "283"/>	  
+	</bean>
+	
+	<!-- rightProp -->
+    <bean id="rightPropLocation" class="com.gabriel.mvc.shapesfx.Location"> 
+        <constructor-arg value= "305"/>  
+		<constructor-arg value = "283"/>	  
+	</bean>
+	
+	
+			<!-- COMPONENTS -->
+			
+			
+	<!-- nose -->
+	<bean id="nose" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "20"/> 
+        <constructor-arg value= "20"/>   
+		<property name="location" ref = "noseLocation"/>	  
+	</bean>
+	
+	
+	<!-- body -->
+	<bean id="body" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "60"/>
+        <constructor-arg value= "200"/>  
+		<property name="location" ref = "bodyLocation"/>	  
+	</bean>
+	
+	
+	<!-- wings -->
+	    <bean id="leftWing" class="com.gabriel.mvc.shapeimpl.Polygon"> 
+        <constructor-arg>
+            <list>
+                <value>200</value>
+                <value>230</value>
+                <value>260</value>
+                <value>220</value>
+            </list>
+        </constructor-arg>  
+		<constructor-arg>
+            <list>
+                <value>190</value>
+                <value>200</value>
+                <value>270</value>
+                <value>260</value>
+            </list>
+        </constructor-arg>
+		<constructor-arg value= "4"/>  
+	</bean>
+	
+	    <bean id="rightWing" class="com.gabriel.mvc.shapeimpl.Polygon"> 
+        <constructor-arg>
+            <list>
+                <value>220</value>
+                <value>270</value>
+                <value>230</value>
+                <value>200</value>
+            </list>
+        </constructor-arg>  
+		<constructor-arg>
+            <list>
+                <value>300</value>
+                <value>295</value>
+                <value>370</value>
+                <value>380</value>
+            </list>
+        </constructor-arg>
+		<constructor-arg value= "4"/>	  
+	</bean>
+	
+	<!-- flap -->
+	    <bean id="leftFlap" class="com.gabriel.mvc.shapeimpl.Polygon"> 
+        <constructor-arg>
+            <list>
+                <value>180</value>
+                <value>200</value>
+                <value>230</value>
+                <value>200</value>
+            </list>
+        </constructor-arg>  
+		<constructor-arg>
+            <list>
+                <value>185</value>
+                <value>190</value>
+                <value>270</value>
+                <value>260</value>
+            </list>
+        </constructor-arg>
+		<constructor-arg value= "4"/>  
+	</bean>
+	
+	    <bean id="rightFlap" class="com.gabriel.mvc.shapeimpl.Polygon"> 
+        <constructor-arg>
+            <list>
+                <value>200</value>
+                <value>220</value>
+                <value>200</value>
+                <value>180</value>
+            </list>
+        </constructor-arg>  
+		<constructor-arg>
+            <list>
+                <value>305</value>
+                <value>300</value>
+                <value>380</value>
+                <value>385</value>
+            </list>
+        </constructor-arg>
+		<constructor-arg value= "4"/>	  
+	</bean>
+	
+	<!-- tail -->
+	<bean id="tail" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "50"/> 
+        <constructor-arg value= "200"/>    
+		<property name="location" ref = "tailLocation"/>	  
+	</bean>
+	
+	<!-- fins -->
+     <bean id="leftFin" class="com.gabriel.mvc.shapeimpl.Polygon"> 
+        <constructor-arg>
+            <list>
+                <value>70</value>
+                <value>90</value>
+                <value>120</value>
+                <value>85</value>
+            </list>
+        </constructor-arg>  
+		<constructor-arg>
+            <list>
+                <value>250</value>
+                <value>255</value>
+                <value>280</value>
+                <value>280</value>
+            </list>
+        </constructor-arg>
+		<constructor-arg value= "4"/>	  
+	</bean>
+    
+    <bean id="rightFin" class="com.gabriel.mvc.shapeimpl.Polygon"> 
+        <constructor-arg>
+            <list>
+                <value>85</value>
+                <value>120</value>
+                <value>90</value>
+                <value>70</value>
+            </list>
+        </constructor-arg>  
+		<constructor-arg>
+            <list>
+                <value>295</value>
+                <value>295</value>
+                <value>315</value>
+                <value>320</value>
+            </list>
+        </constructor-arg>
+		<constructor-arg value= "4"/>	  
+	</bean>
+	
+	<!-- cab -->
+	<bean id="cab" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "20"/> 
+        <constructor-arg value= "80"/>    
+		<property name="location" ref = "cabLocation"/>	  
+	</bean>
+	
+	<!-- man -->
+	<bean id="man" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "30"/> 
+        <constructor-arg value= "30"/>    
+		<property name="location" ref = "manLocation"/>	  
+	</bean>
+	
+	<!-- leftProp -->
+	<bean id="leftProp" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "11"/> 
+        <constructor-arg value= "50"/>    
+		<property name="location" ref = "leftPropLocation"/>	  
+	</bean>
+	
+	<!-- rightProp -->
+	<bean id="rightProp" class="com.gabriel.mvc.shapeimpl.Circle"> 
+        <constructor-arg value= "11"/> 
+        <constructor-arg value= "35"/>    
+		<property name="location" ref = "rightPropLocation"/>	  
+	</bean>
+	
+	
+	
+    <bean id="plane" class="com.gabriel.mvc.shapeimpl.Plane">
+		<constructor-arg ref="nose"/>
+		<constructor-arg ref="body"/>  
+		<constructor-arg ref="leftWing"/>  
+		<constructor-arg ref="rightWing"/> 
+		<constructor-arg ref="leftFlap"/> 
+		<constructor-arg ref="rightFlap"/>
+		<constructor-arg ref="tail"/>   
+		<constructor-arg ref="leftFin"/>
+		<constructor-arg ref="rightFin"/>
+		<constructor-arg ref="cab"/> 
+		<constructor-arg ref="man"/> 
+		<constructor-arg ref="leftProp"/> 
+		<constructor-arg ref="rightProp"/>  
+		<property name="location" ref = "planeLocation"/> 
+	</bean>  
+  
+</beans>  
